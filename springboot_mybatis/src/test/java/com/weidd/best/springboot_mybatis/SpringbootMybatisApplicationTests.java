@@ -8,6 +8,7 @@ class SpringbootMybatisApplicationTests {
 
     @Test
     void contextLoads() {
+        
     }
 
 }

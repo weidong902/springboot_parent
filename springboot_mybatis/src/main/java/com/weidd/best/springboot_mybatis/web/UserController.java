@@ -20,9 +20,15 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("finAll")
+    @RequestMapping("findAll")
     public List<User> finAll() {
         System.out.println("请求进来了");
         return userService.findAll();
+    }
+
+    @RequestMapping("add")
+    public void add(User user) {
+        System.out.println("add 请求进来了");
+        userService.add(user);
     }
 }

@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+// Springboot整合mybatis必须在入口类上加这个注解:@MapperScan
 @MapperScan("com.weidd.best.springboot_mybatis.mapper") // 修饰范围:用在类上,作用:扫描dao接口所在的包,同时将所有dao接口在工厂中创建对象(代理对象)
 public class SpringbootMybatisApplication {
 

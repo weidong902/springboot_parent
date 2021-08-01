@@ -11,16 +11,16 @@ import java.util.Date;
 public class User {
     private Integer id;
     private String name;
-    private Date brithday;
+    private Date birthday;
     private BigDecimal salary;
 
     public User() {
     }
 
-    public User(Integer id, String name, Date brithday, BigDecimal salary) {
+    public User(Integer id, String name, Date birthday, BigDecimal salary) {
         this.id = id;
         this.name = name;
-        this.brithday = brithday;
+        this.birthday = birthday;
         this.salary = salary;
     }
 
@@ -40,12 +40,12 @@ public class User {
         this.name = name;
     }
 
-    public Date getBrithday() {
-        return brithday;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setBrithday(Date brithday) {
-        this.brithday = brithday;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public BigDecimal getSalary() {
