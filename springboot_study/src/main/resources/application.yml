@@ -1,0 +1,4 @@
+server:
+  port: 8081 # 端口号
+  servlet:
+    context-path:  /test  # 项目名:必须以 "/" 开头
