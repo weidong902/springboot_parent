@@ -23,3 +23,11 @@ mybatis:
   mapper-locations: classpath:com/weidd/best/springboot_mybatis/mapper/*.xml # 指定mapper配置文件
   type-aliases-package: com.weidd.best.springboot_mybatis.pojo # 指定实体类的包名,默认别名:类名 首字母小写
 
+logging:
+  level:
+    root: info # 全局(根)的日志 (默认是info) 一般不动
+    com.weidd.best.springboot_mybatis.mapper: debug # 输出指定包的日志级别,(可以写多个)
+  file:
+    name: run222.log # 指定生成日志文件名
+    path: ./ # 将日志生成到当前目录(当前项目的目录中)
+
